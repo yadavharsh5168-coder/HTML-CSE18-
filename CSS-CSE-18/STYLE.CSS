@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Form Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Rhythmic Steps Dance Studio</h1>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Find Your Rhythm</h2>
+            <p>Explore a variety of dance styles and find the perfect class for you. Scroll down to meet our lead instructor!</p>
+        </section>
+
+        <section class="teacher" id="teacher-section">
+            <h2>Meet Your Instructor</h2>
+            <div class="teacher-info">
+                <p>Hi, I'm Alex! I specialize in contemporary and hip-hop. My goal is to help you express yourself through movement.</p>
+            </div>
+        </section>
+
+        <section class="classes">
+            <h2>Our Classes</h2>
+            <p>We offer beginner to advanced courses in Ballet, Jazz, and Tap.</p>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Ready to join? Sign up for a free trial class today!</p>
+        </section>
+        
+    </main>
+    
+    <div id="chatbot-icon" class="chatbot-icon">
+        🤖
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+/* Basic Reset and General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #A52A2A; /* Dance-friendly color */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+section {
+    padding: 80px 20px;
+    min-height: 400px; /* Ensures enough vertical space for scrolling */
+    text-align: center;
+}
+
+.intro {
+    background-color: #e0e0e0;
+}
+
+.classes {
+    background-color: #fff;
+}
+
+.contact {
+    background-color: #e0e0e0;
+}
+
+/* --- Dance Teacher Image Styling --- */
+.teacher {
+    background-color: #F8F8FF;
+}
+
+.teacher-info {
+    /* Set the image as a background for a clean, consistent look */
+    background-image: url('placeholder-teacher.jpg'); 
+    /* *IMPORTANT:* Replace 'placeholder-teacher.jpg' with your actual image file path */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    height: 300px; /* Set a height for the image area */
+    display: flex;
+    align-items: flex-end; /* Position text at the bottom */
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.teacher-info p {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for text */
+    color: white;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* --- AI Chatbot Icon Styling --- */
+
+/* Initial Position: Bottom Right (page 1) */
+.chatbot-icon {
+    position: fixed; /* Essential for making it float above content */
+    bottom: 20px;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: #FFD700; /* Gold/Yellow color for visibility */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out; /* Smooth transition for movement */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+/* Secondary Position: Mid-Right (page 2, triggered by JS scroll) */
+.chatbot-scrolled {
+    bottom: auto; /* Remove bottom constraint */
+    top: 50%; /* Position near the middle of the screen */
+    right: 10px;
+    font-size: 20px; /* Make it a bit smaller */
+    background-color: #32CD32; /* Change color to indicate state change */
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    transform: translateY(-50%); /* Center vertically */
+}

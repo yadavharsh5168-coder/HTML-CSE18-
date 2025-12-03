@@ -1,0 +1,78 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @media  screen and (max width:460px) {
+        
+    }
+
+
+
+}
+main{
+    width: 100%;
+    height:  auto;
+    background-color: antiquewhite;
+    display: grid;
+    /* grid-template-columns: repeat(4,1fr); */
+    gap:10px; 
+    grid-template-rows: 100px 50px 120px;
+
+}
+@media screen and (max max-width:500px) 
+.box{
+background-color: rgb(4, 8, 11);
+}
+</style>
+<body>
+ <main> 
+     <div class="box"> f1</div><br>
+    <div class="box class=box">f3</div><br>
+    <div class="box">f2</div><br>
+    <div class="box">f6</div></main> 
+</body>
+</html> --><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Grid</title>
+  <style>
+    html, * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    main {
+      width: 100%;
+      min-height: 100vh;
+      background-color: rgb(154, 169, 169);
+       display: grid; 
+     grid-template-columns: repeat(4, 1fr);/* 4 equal horizontal columns*/
+      gap: 10px;
+      padding: 10px;
+    }
+    .box {
+      background-color: rgb(174, 132, 42);
+      width: auto;
+      height: auto;
+      display: grid;
+      place-items: center; /* centers text inside */
+      font-size: 24px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="box">BOX 1</div>
+    <div class="box">box 2</div>
+    <div class="box">box3</div>
+    <div class="box">box3</div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Experiment - Flexbox Student Profile Card</title> 
+<style> 
+/* CSS FROM YOUR ASSIGNMENT IMAGE */ 
+body { 
+font-family: Arial, sans-serif; 
+margin: 20px; 
+background: #f9f9f9; 
+} 
+h2 { 
+text-align: center; 
+margin-bottom: 30px; 
+} 
+.container { 
+display: flex;            /* Enables Flexbox */ 
+flex-direction: row;      /* Arrange items in a row */ 
+justify-content: center;  /* Center horizontally */ 
+align-items: center;      /* Align vertically */ 
+gap: 20px;
+flex-wrap: wrap;  
+} 
+.card { 
+background: #fff; 
+border-radius: 8px; 
+                /* Space between cards */ 
+        /* 
+Wrap to next line if needed */ 
+box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+width: 220px; 
+text-align: center; 
+padding: 16px; 
+            transition: transform 0.2s; /* Optional: Adds a hover effect */ 
+        } 
+        .card:hover { 
+            transform: translateY(-5px); /* Optional: Slight lift on hover */ 
+        } 
+        .avatar { 
+            width: 70px; 
+            height: 70px; 
+            background: #007bff; 
+            color: #fff; 
+            border-radius: 50%; 
+            display: flex;            /* Flexbox inside the avatar to center text */ 
+            justify-content: center;  
+            align-items: center; 
+            font-size: 20px; 
+            margin: 0 auto 12px;      /* Centers the avatar inside the card */ 
+            font-weight: bold; 
+        } 
+        .name { 
+            font-size: 18px; 
+            margin: 10px 0 5px; 
+            color: #333; 
+        } 
+        .role { 
+            font-size: 14px; 
+            color: #777; 
+            margin-bottom: 15px; 
+        } 
+        button { 
+padding: 8px 16px; 
+background-color: #007bff; 
+color: white; 
+border: none; 
+border-radius: 4px; 
+cursor: pointer; 
+} 
+button:hover { 
+background-color: #0056b3; 
+} 
+</style> 
+</head> 
+<body> 
+<h2>Student Profile Cards</h2> 
+<div class="container"> 
+<div class="card"> 
+<div class="avatar">JS</div> 
+<h3 class="name">John Smith</h3> 
+<p class="role">Computer Science</p> 
+<button>View Profile</button> 
+</div> 
+<div class="card"> 
+<div class="avatar" style="background-color: #28a745;">EP</div> 
+<h3 class="name">Emily P.</h3> 
+<p class="role">Information Tech</p> 
+<button style="background-color: #28a745;">View Profile</button> 
+</div> 
+<div class="card"> 
+<div class="avatar" style="background-color: #dc3545;">MK</div> 
+<h3 class="name">Mike K.</h3> 
+<p class="role">Data Science</p> 
+<button style="background-color: #dc3545;">View Profile</button> 
+</div> 
+<div class="card"> 
+<div class="avatar" style="background-color: #ffc107; color: #333;">AL</div> 
+<h3 class="name">Anna Lee</h3> 
+<p class="role">Web Design</p> 
+<button style="background-color: #ffc107; color: #333;">View Profile</button> 
+</div> 
+</div> 
+</body> 
+</html>

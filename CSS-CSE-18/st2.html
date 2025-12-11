@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>harsh</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      width: 100%;
+      color: white;
+    }
+
+    .box {
+      background-color: black;
+      color: white;
+      display: grid;
+      place-content: center;
+      padding: 20px;
+      font-size: 1.5rem;
+    }
+
+    .box2 {
+      max-width: 100%;
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    .box2 img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .inline-block-demo {
+      display: inline-block;
+      width: 30%;
+      min-width: 120px;
+      height: 100px;
+      background-color: blue;
+      color: white;
+      text-align: center;
+      margin: 10px;
+      line-height: 100px;
+    }
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      background-color: lightgray;
+      padding: 20px; }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .grid-item {
+      background-color: purple;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .hidden {
+      display: none;
+    }
+    @media (max-width: 768px) {
+      .box {
+        font-size: 1.2rem;
+      }
+      .inline {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .box {
+        font-size: 1rem;
+      }
+      .inline-block-demo {
+        width: 100%;
+      }
+      .flex-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="box">amazon website</div>
+    <span>
+      <div class="box2">
+        <img src="headphone.jpg" height="550px" width="400"alt="Laptop">
+      </div>
+    </span>
+  </header>
+
+ 
+  <h2>Inline-block Elements</h2>
+  <div class="inline">Box A</div>
+  <div class="inline">Box B</div>
+  <div class="inline">Box C</div>
+  <h2>Flexbox Layout</h2>
+  <div class="flex-container">
+    <div class="flex-item">Flex 1</div>
+    <div class="flex-item">Flex 2</div>
+    <div class="flex-item"><img  HEIGHT="500px"src="vecteezy_amazon-logo-png-amazon-icon-transparent-png_19766240.png" alt=""></div>
+  </div>
+  <p class="hidden">You cannot see me because I use display:none</p>
+</body>
+</html>
